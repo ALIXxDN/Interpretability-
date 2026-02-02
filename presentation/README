@@ -1,86 +1,62 @@
-# Linguistic Interpretability Prototype
+# Linguistic Interpretability of Transformer-based Language Models
 
-A survey-based course project prototype for analyzing linguistic interpretability in Transformer-based PLMs using probing and layer-wise analysis.
+## Course Project – Natural Language Processing
 
----
+This repository contains the materials related to the course project  
+**“Linguistic Interpretability of Transformer-based Language Models”**.
 
-## 1) What is this repo? (Overview)
-
-This repository contains an *educational prototype aligned with a survey (review) paper on linguistic interpretability of Transformer-based pre-trained language models (PLMs).  
-Because the reference paper is a survey and does not provide runnable code or a single fixed dataset for replication, this project does not aim to reproduce paper results.  
-Instead, it demonstrates how core interpretability methods highlighted in the survey can be implemented in practice.
+The project studies how linguistic knowledge (e.g., syntax and semantics) is represented inside transformer-based language models, focusing on interpretability and analysis of internal representations rather than only model outputs.
 
 ---
 
-## 2) Key Features / What’s inside
+## Project Description
+Modern transformer-based models such as BERT and GPT achieve strong performance across NLP tasks, yet their internal decision mechanisms remain largely opaque.  
+This project investigates **linguistic interpretability**, aiming to understand how linguistic properties are encoded in embeddings, layers, and attention mechanisms of transformer models.
 
-- Layer-wise probing for syntactic information (POS tagging)
-- Extraction of hidden representations across Transformer layers
-- Attention heatmap* visualization (qualitative example)
-- Reproducible, lightweight setup suitable for a course project
-
----
-
-## 3) Requirements
-
-- Python 3.10+
-- Main libraries:
-  - `torch`
-  - `transformers`
-  - `datasets==2.14.6`
-  - `scikit-learn`
-  - `conllu`
-  - `numpy`, `pandas`, `matplotlib`, `joblib`
-
-> Note: `datasets==2.14.6` is used due to compatibility issues with newer versions when loading UD-style datasets.
+The work is primarily based on a theoretical and analytical study, supported by a small probing-based prototype.
 
 ---
 
-## 4) How to Run (Quickstart)
+## Contents
+- **Interpretability.pdf**  
+  Main project report describing:
+  - Problem definition and motivation
+  - Importance of linguistic interpretability
+  - Position of the topic within NLP
+  - Main research directions
+  - Challenges and limitations
+  - Applications and future research paths
 
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+- **reports/**
+  - Literature review and analytical summaries
 
-2. Open and run the notebook:
-
-demo/linguistic_interpretability_prototype.ipynb
-
-Run all cells (Jupyter/Colab)
-
-
-
-
-
----
-
-5) Outputs
-
-After running the notebook, outputs are created in demo/output/:
-
-results.csv — layer-wise probing results (accuracy per layer)
-
-probe.joblib — saved probing classifier
-
-Plots (layer-wise accuracy curve) and attention heatmaps (shown in the notebook)
-
-
+- **demo/**
+  - A small prototype demonstrating probing-based linguistic analysis
 
 ---
 
-6) Limitations / Disclaimer
+## Methodology Overview
+The project reviews common interpretability approaches discussed in the literature, including:
+- Probing-based analysis
+- Attention-based interpretability
+- Causal and mechanistic interpretability methods
 
-This is a survey-based prototype, not a replication study
-
-Probing measures extractability, not causal usage by the model
-
-Results are illustrative/educational and based on a small-scale setup
-
-
+A simple probing setup is used to illustrate how linguistic information can be extracted from internal model representations.
 
 ---
 
-7) Reference
+## Scope and Limitations
+This project focuses on conceptual understanding and analysis rather than large-scale experimental evaluation.  
+The implemented prototype is illustrative and does not aim to reproduce full benchmark results.
 
-Linguistic Interpretability of Transformer-based Pre-trained Language Models
-A Systematic Survey
+---
+
+## References
+- López-Otal et al. (2025). *Linguistic Interpretability of Transformer-based Language Models: A Systematic Review*. arXiv:2504.08001
+- Belinkov & Glass (2019). *Analysis Methods in Neural Language Processing*
+- Hewitt & Manning (2019). *A Structural Probe for Finding Syntax*
+
+---
+
+## Notes
+This repository is intended for academic purposes as part of a graduate NLP course.
