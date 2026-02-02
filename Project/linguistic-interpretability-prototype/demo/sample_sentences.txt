@@ -1,0 +1,9 @@
+# A few small examples for attention visualization / tagging demos.
+
+[EN] The quick brown fox jumps over the lazy dog.
+[EN] The boy did not play the piano.
+[EN] Alice gave Bob a book because he asked for it.
+
+[FA] علی کتاب را به مریم داد.
+[FA] پسر پیانو را ننواخت.
+[FA] اگر هوا خوب باشد، فردا به پارک می‌رویم.
