@@ -1,0 +1,12 @@
+Short Experiment Description
+The conducted experiments follow a simple and controlled probing setup.
+A pre-trained multilingual BERT model is used to extract contextual word representations from different Transformer layers.
+A lightweight probing classifier is then trained to predict part-of-speech (POS) tags based on these representations.
+Experimental details:
+Model: bert-base-multilingual-cased
+Layers analyzed: 1–12 (layer-wise comparison)
+Task: POS tagging (syntactic probing)
+Classifier: Logistic Regression / shallow MLP
+Evaluation metric: Accuracy
+Repetitions: Single run with a fixed random seed (for reproducibility)
+The results illustrate how syntactic information is distributed across Transformer layers, without making causal claims about model decision-making.
